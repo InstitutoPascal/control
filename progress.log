@@ -1,0 +1,7 @@
+[2013-09-13 19:29:43] START
+[2013-09-13 19:30:38] CREATE control.py: 0
+[2013-09-13 19:31:04] EDIT control/controllers/control.py: 1
+[2013-09-13 19:31:30] CREATE control.html: 0
+[2013-09-13 19:31:52] EDIT control/views/control.html: 0
+[2013-09-13 19:32:05] EDIT control/views/control.html: 0
+[2013-09-13 19:43:40] EDIT control/views/default/index.html: -13
