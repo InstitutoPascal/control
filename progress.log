@@ -82,3 +82,8 @@
 [2013-09-17 20:15:13] EDIT control/views/default/index.html: -2
 [2013-09-17 20:16:41] EDIT control/views/default/index.html: 1
 [2013-09-17 20:17:13] EDIT control/views/default/index.html: 0
+[2013-09-17 20:31:50] UPLOAD /home/luka/web2py/applications/control1/static/logo_pascal: 500
+[2013-09-17 20:32:21] CREATE logo_pascal.jpg: 0
+[2013-09-17 20:32:37] DELETE control1/static/logo_pascal.jpg: 0
+[2013-09-17 20:34:04] DELETE control1/static/logo_pascal: -500
+[2013-09-17 20:34:25] UPLOAD /home/luka/web2py/applications/control1/static/logo_pascal.jpg: 500
