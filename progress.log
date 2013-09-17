@@ -41,3 +41,4 @@
 [2013-09-14 18:39:11] EDIT control/controllers/default.py: -1
 [2013-09-14 18:39:17] EDIT control/models/menu.py: 0
 [2013-09-17 16:32:16] EDIT control/controllers/default.py: 0
+[2013-09-17 16:45:16] EDIT control/views/default/index.html: 83

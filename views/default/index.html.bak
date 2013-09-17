@@ -17,6 +17,5 @@
   <li>{{=A(T("Online examples"), _href=URL('examples','default','index'))}}</li>
   <li><a href="http://web2py.com">web2py.com</a></li>
   <li><a href="http://web2py.com/book">{{=T('Documentation')}}</a></li>
-    {{=a}}
 </ul>
 {{end}}
