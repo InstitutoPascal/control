@@ -87,3 +87,12 @@
 [2013-09-17 20:32:37] DELETE control1/static/logo_pascal.jpg: 0
 [2013-09-17 20:34:04] DELETE control1/static/logo_pascal: -500
 [2013-09-17 20:34:25] UPLOAD /home/luka/web2py/applications/control1/static/logo_pascal.jpg: 500
+[2013-09-18 15:35:42] EDIT control1/views/default/index.html: 0
+[2013-09-18 15:36:25] EDIT control1/views/default/index.html: 0
+[2013-09-18 15:36:59] EDIT control1/views/default/index.html: 0
+[2013-09-18 15:37:15] EDIT control1/views/default/index.html: 0
+[2013-09-18 15:37:50] EDIT control1/views/default/index.html: 0
+[2013-09-18 15:39:55] EDIT control1/views/default/index.html: -3
+[2013-09-18 15:40:21] EDIT control1/views/default/index.html: 0
+[2013-09-18 15:40:34] EDIT control1/views/default/index.html: 0
+[2013-09-18 15:41:03] EDIT control1/views/default/index.html: 0
