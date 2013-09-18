@@ -34,7 +34,7 @@ def ficha():
         # si me pasan en la URL el docente, lo filtro 
         q=db.personas.personaid == request.vars['personaid']
         
-        filas= db(q).select(db.personas.nombre, db.personas.dni, db.personas.foto)
+        filas= db(q).select(db.personas.nombre, db.personas.dni, db.personas.foto).first()
     
     return dict (filas=filas)
 
