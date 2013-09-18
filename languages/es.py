@@ -270,6 +270,7 @@
 'Statistics': 'Estadísticas',
 'Stylesheet': 'Hoja de estilo',
 'submit': 'enviar',
+'Submit': 'Submit',
 'Support': 'Soporte',
 'Sure you want to delete this object?': '¿Está seguro que desea eliminar este objeto?',
 'Table': 'tabla',

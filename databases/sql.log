@@ -53,3 +53,33 @@ CREATE TABLE auth_cas(
     renew CHAR(1)
 );
 success!
+timestamp: 2013-09-18T18:29:58.547000
+CREATE TABLE alumnos(
+    alumnoid INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre CHAR(200),
+    dni INTEGER,
+    sexo CHAR(1),
+    fechanacimiento DATE,
+    lugarnacimiento CHAR(250),
+    estadocivil CHAR(50),
+    nacionalidad CHAR(50),
+    direccion CHAR(200),
+    localidad CHAR(50),
+    cp CHAR(7),
+    telefono CHAR(250),
+    email1 CHAR(100),
+    email2 CHAR(100),
+    ingreso DATE,
+    egreso DATE,
+    foto CHAR(50),
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE
+);
+success!
+timestamp: 2013-09-18T18:36:32.219000
+CREATE TABLE personas(
+    personaid INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre CHAR(200),
+    dni INTEGER,
+    foto CHAR(50)
+);
+success!
