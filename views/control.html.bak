@@ -1,0 +1,4 @@
+{{extend 'layout.html'}}
+<h1>Bienvenido</h1>
+Hola Lucas
+{{=BEAUTIFY(response._vars)}}

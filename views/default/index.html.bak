@@ -1,0 +1,29 @@
+<head>
+    <style type="text/css">
+       body {
+              font-family: Dejavu, Verdana, helvetica;
+              font-size: 12px; 
+              background-color: #243080; color: #FFFFFF; 
+              text-align:center;
+       }
+       h1 ,h2 ,h3, h4 { color: #D7D7D7; }
+       a { text-decoration: none; color: #FFFFFF;}
+       img { border:0;}
+       
+       #telon {
+            background-image: url({{=URL(c='static', f='logo_pascal.jpg')}}); 
+            background-repeat: no-repeat;
+            width:696px;
+            height:547px;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:auto;
+            margin-bottom:auto;
+            text-align:center;
+            align:center;
+            min-width: 696px;
+            position: relative;
+        }
+
+    </style>
+  </head>
