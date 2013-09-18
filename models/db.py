@@ -89,5 +89,5 @@ db.define_table('personas',
     Field('nombre', type='string', length=200),
     Field('dni', type='integer'),
     Field('foto', type='upload', length=50))
-db.alumnos.nombre.requires=IS_NOT_EMPTY(error_message='Ingrese el nombre')
-db.alumnos.dni.requires=IS_NOT_EMPTY(error_message='Ingrese el dni')
+db.personas.nombre.requires=IS_NOT_EMPTY(error_message='Ingrese el nombre')
+db.personas.dni.requires=IS_NOT_EMPTY(error_message='Ingrese el dni')
