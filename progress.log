@@ -109,3 +109,9 @@
 [2013-09-18 18:35:25] EDIT control/models/db.py: -11
 [2013-09-18 18:37:11] EDIT control/models/db.py: 0
 [2013-09-18 18:53:54] EDIT control/views/default/index.html: 0
+[2013-09-18 19:14:39] EDIT control/controllers/default.py: 3
+[2013-09-18 19:14:53] EDIT control/controllers/default.py: 0
+[2013-09-18 19:15:28] EDIT control/controllers/default.py: -2
+[2013-09-18 19:16:40] EDIT control/controllers/default.py: 0
+[2013-09-18 19:20:12] EDIT control/views/default/ficha.html: 0
+[2013-09-18 19:20:29] EDIT control/views/default/ficha.html: 0
