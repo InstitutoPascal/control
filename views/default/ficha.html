@@ -1,5 +1,8 @@
 {{extend 'layout.html'}}
-<h1>FICHA</h1>
-{{=filas.foto}}
+ 
+ <h2><center>Sistema de Control de Acceso</center></h2>
+{{=filas.foto}} 
+<h2> Fecha: {{=request.now.date()}}</h2>
 <h2>Nombre: {{=filas.nombre}} </h2>
 <h2>Dni: {{=filas.dni}} </h2>
+<h2><center>Hora de Ingreso: {{=request.now.time()}}</center></h2>
