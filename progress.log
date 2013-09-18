@@ -96,3 +96,11 @@
 [2013-09-18 15:40:21] EDIT control1/views/default/index.html: 0
 [2013-09-18 15:40:34] EDIT control1/views/default/index.html: 0
 [2013-09-18 15:41:03] EDIT control1/views/default/index.html: 0
+[2013-09-18 16:12:34] EDIT control1/views/default/index.html: -1
+[2013-09-18 16:14:10] EDIT control1/views/default/index.html: 1
+[2013-09-18 16:20:24] EDIT control1/views/default/index.html: -1
+[2013-09-18 16:21:04] EDIT control1/views/default/index.html: 1
+[2013-09-18 16:21:43] EDIT control1/views/default/index.html: 0
+[2013-09-18 16:22:35] EDIT control1/views/default/index.html: 0
+[2013-09-18 18:21:37] EDIT control/views/default/index.html: -53
+[2013-09-18 18:24:13] EDIT control/models/db.py: 35
