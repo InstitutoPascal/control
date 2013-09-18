@@ -53,3 +53,11 @@ CREATE TABLE auth_cas(
     renew CHAR(1)
 );
 success!
+timestamp: 2013-09-18T18:38:58.081684
+CREATE TABLE personas(
+    personaid INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre CHAR(200),
+    dni INTEGER,
+    foto CHAR(50)
+);
+success!
