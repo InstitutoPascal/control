@@ -88,6 +88,15 @@ db.define_table('personas',
     Field('personaid', type='id'),
     Field('nombre', type='string', length=200),
     Field('dni', type='integer'),
-    Field('foto', type='upload', length=50))
+    Field('foto', type='upload', length=50),
+    format = "%(personaid)s [%(nombre)s]",
+    migrate=migrate)
 db.personas.nombre.requires=IS_NOT_EMPTY(error_message='Ingrese el nombre')
 db.personas.dni.requires=IS_NOT_EMPTY(error_message='Ingrese el dni')
+
+db.define_table('movimientos',
+    Field('movimientoid', type='id'),
+    Field('personaid', db.personas),
+    Field('fecha', type='date', default=request.now.date(), required= True),
+    Field('hora', type='time', default=request.now.time(), required= True),
+    migrate=migrate)

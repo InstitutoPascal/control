@@ -17,6 +17,7 @@ def index():
         )
     q= db.personas.id>0
     if form.accepts(request.vars, session):
+        
         # buscar el alumno
         q = db.personas.dni == form.vars.dni
         persona = db(q).select().first()
@@ -31,8 +32,14 @@ def index():
     
 def ficha():
     if request.vars:
+        fecha = request.now.date()
+        hora = request.now.time()
+        personaid= request.vars['personaid']
+        db.movimientos.insert(personaid=personaid, fecha=fecha, hora=hora)
+        response.flash='Usted fue registrado...'
+        
         # si me pasan en la URL el docente, lo filtro 
-        q=db.personas.personaid == request.vars['personaid']
+        q=db.personas.personaid == personaid
         
         filas= db(q).select(db.personas.nombre, db.personas.dni, db.personas.foto).first()
     

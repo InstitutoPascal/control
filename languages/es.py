@@ -298,6 +298,7 @@
 'Time in Cache (h:m:s)': 'Tiempo en Cache (h:m:s)',
 'Timestamp': 'Marca de tiempo',
 'to  previous version.': 'a la versión previa.',
+'Traceback': 'Traceback',
 'translation strings for the application': 'cadenas de carácteres de traducción para la aplicación',
 'try': 'intente',
 'try something like': 'intente algo como',

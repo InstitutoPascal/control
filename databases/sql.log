@@ -1,4 +1,4 @@
-timestamp: 2013-09-13T19:32:14.125427
+timestamp: 2013-09-18T20:24:35.502268
 CREATE TABLE auth_user(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     first_name CHAR(128),
@@ -10,21 +10,21 @@ CREATE TABLE auth_user(
     registration_id CHAR(512)
 );
 success!
-timestamp: 2013-09-13T19:32:14.252316
+timestamp: 2013-09-18T20:24:35.723071
 CREATE TABLE auth_group(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     role CHAR(512),
     description TEXT
 );
 success!
-timestamp: 2013-09-13T19:32:14.334015
+timestamp: 2013-09-18T20:24:35.818199
 CREATE TABLE auth_membership(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
     group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE
 );
 success!
-timestamp: 2013-09-13T19:32:14.532342
+timestamp: 2013-09-18T20:24:35.956649
 CREATE TABLE auth_permission(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE,
@@ -33,7 +33,7 @@ CREATE TABLE auth_permission(
     record_id INTEGER
 );
 success!
-timestamp: 2013-09-13T19:32:14.603711
+timestamp: 2013-09-18T20:24:36.085624
 CREATE TABLE auth_event(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     time_stamp TIMESTAMP,
@@ -43,7 +43,7 @@ CREATE TABLE auth_event(
     description TEXT
 );
 success!
-timestamp: 2013-09-13T19:32:14.709734
+timestamp: 2013-09-18T20:24:36.221529
 CREATE TABLE auth_cas(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
@@ -53,11 +53,19 @@ CREATE TABLE auth_cas(
     renew CHAR(1)
 );
 success!
-timestamp: 2013-09-18T18:38:58.081684
+timestamp: 2013-09-18T20:24:36.329210
 CREATE TABLE personas(
     personaid INTEGER PRIMARY KEY AUTOINCREMENT,
     nombre CHAR(200),
     dni INTEGER,
     foto CHAR(50)
+);
+success!
+timestamp: 2013-09-18T20:24:36.449859
+CREATE TABLE movimientos(
+    movimientoid INTEGER PRIMARY KEY AUTOINCREMENT,
+    personaid INTEGER REFERENCES personas (personaid) ON DELETE CASCADE,
+    fecha DATE,
+    hora TIME
 );
 success!
