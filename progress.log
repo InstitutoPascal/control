@@ -115,3 +115,10 @@
 [2013-09-18 19:16:40] EDIT control/controllers/default.py: 0
 [2013-09-18 19:20:12] EDIT control/views/default/ficha.html: 0
 [2013-09-18 19:20:29] EDIT control/views/default/ficha.html: 0
+[2013-09-18 19:22:00] EDIT control/views/default/ficha.html: -1
+[2013-09-18 19:22:55] EDIT control/views/default/ficha.html: 1
+[2013-09-18 19:24:06] EDIT control/views/default/ficha.html: 2
+[2013-09-18 19:24:33] EDIT control/views/default/ficha.html: 0
+[2013-09-18 19:24:59] EDIT control/controllers/default.py: 0
+[2013-09-18 19:26:25] EDIT control/views/default/ficha.html: 0
+[2013-09-18 19:27:17] EDIT control/views/default/ficha.html: 0
