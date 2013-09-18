@@ -104,3 +104,4 @@
 [2013-09-18 16:22:35] EDIT control1/views/default/index.html: 0
 [2013-09-18 18:21:37] EDIT control/views/default/index.html: -53
 [2013-09-18 18:24:13] EDIT control/models/db.py: 35
+[2013-09-18 18:28:11] EDIT control/controllers/control.py: 14
