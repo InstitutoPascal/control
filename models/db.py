@@ -84,37 +84,10 @@ use_janrain(auth, filename='private/janrain.key')
 
 migrate = True
 
-db.define_table('alumnos',
-    Field('alumnoid', type='id'),
+db.define_table('personas',
+    Field('personaid', type='id'),
     Field('nombre', type='string', length=200),
     Field('dni', type='integer'),
-    Field('sexo', type='string', length=1),
-    Field('fechanacimiento', type='date'),
-    Field('lugarnacimiento', type='string', length=250),
-    Field('estadocivil', type='string', length=50),
-    Field('nacionalidad', type='string', length=50),
-    Field('direccion', type='string', length=200),
-    Field('localidad', type='string', length=50),
-    Field('cp', type='string', length=7),
-    Field('telefono', type='string', length=250),
-    Field('email1', type='string', length=100),
-    Field('email2', type='string', length=100),
-    Field('ingreso', type='date'),
-    Field('egreso', type='date', readable= False, writable= False),
-    Field('foto', type='upload', length=50),
-    Field('user_id', db.auth_user, readable= False, writable= False),
-    format= "%(alumnoid)s [%(nombre)s]",
-    migrate=migrate)
+    Field('foto', type='upload', length=50))
 db.alumnos.nombre.requires=IS_NOT_EMPTY(error_message='Ingrese el nombre')
 db.alumnos.dni.requires=IS_NOT_EMPTY(error_message='Ingrese el dni')
-db.alumnos.sexo.requires=IS_NOT_EMPTY(error_message='Ingrese el sexo')
-db.alumnos.fechanacimiento.requires=IS_NOT_EMPTY(error_message='Ingrese la fecha de nacimiento')
-db.alumnos.lugarnacimiento.requires=IS_NOT_EMPTY(error_message='Ingrese el lugar de nacimiento')
-db.alumnos.estadocivil.requires=IS_NOT_EMPTY(error_message='Ingrese el estado civil')
-db.alumnos.nacionalidad.requires=IS_NOT_EMPTY(error_message='Ingrese la nacionalidad')
-db.alumnos.direccion.requires=IS_NOT_EMPTY(error_message='Ingrese la direccion')
-db.alumnos.localidad.requires=IS_NOT_EMPTY(error_message='Ingrese la localidad')
-db.alumnos.cp.requires=IS_NOT_EMPTY(error_message='Ingrese el codigo postal')
-db.alumnos.telefono.requires=IS_NOT_EMPTY(error_message='Ingrese el telefono')
-db.alumnos.email1.requires=IS_NOT_EMPTY(error_message='Ingrese el email')
-db.alumnos.ingreso.requires=IS_NOT_EMPTY(error_message='Ingrese la fecha de ingreso')
