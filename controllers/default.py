@@ -11,12 +11,30 @@
 
 
 def index():
-    """
-    example action using the internationalization operator T and flash
-    rendered by views/default/index.html or views/generic.html
-    """
-    response.flash = T('Welcome to web2py')
-    return {}
+    # armo un formulario para buscar alumno por su dni
+    form = SQLFORM.factory(
+        Field("dni", "integer"),
+        )
+    q= db.personas.id>0
+    if form.accepts(request.vars, session):
+        # buscar el alumno
+        q = db.personas.dni == form.vars.dni
+        persona = db(q).select().first()
+        if persona:
+            # encontrado, redirigo al menu alumnos en index 
+            redirect(URL(f=ficha, vars={'personaid': persona.personaid}))
+            
+        else:
+            response.flash = "Persona no encontrada"
+    #response.view = "generic.html"  # HACER una vista de verdad
+    return dict (form = form)
+    
+def ficha():
+    personaid = request.args[0]
+    q= db.personas.personadni== personaid
+    filas= db(q).select(db.personas.nombre, db.personas.dni, db.personas.foto)
+    
+    return dict (filas=filas)
 
 
 def user():
