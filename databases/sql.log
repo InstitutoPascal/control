@@ -61,11 +61,60 @@ CREATE TABLE personas(
     foto CHAR(50)
 );
 success!
+<<<<<<< local
+timestamp: 2013-09-18T19:09:35.491765
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+=======
 timestamp: 2013-09-18T20:24:36.449859
 CREATE TABLE movimientos(
     movimientoid INTEGER PRIMARY KEY AUTOINCREMENT,
     personaid INTEGER REFERENCES personas (personaid) ON DELETE CASCADE,
     fecha DATE,
     hora TIME
+>>>>>>> other
 );
+<<<<<<< local
+timestamp: 2013-09-18T19:14:29.476522
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+);
+timestamp: 2013-09-18T19:24:48.534819
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+);
+timestamp: 2013-09-18T19:28:33.606043
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+);
+=======
 success!
+>>>>>>> other
