@@ -1,0 +1,43 @@
+TABLE auth_user
+
+
+TABLE auth_group
+
+
+TABLE auth_membership
+
+
+TABLE auth_permission
+
+
+TABLE auth_event
+
+
+TABLE auth_cas
+
+
+TABLE personas
+personas.personaid,personas.nombre,personas.dni,personas.foto
+1,Gonzalez Lucas,37144463,
+2,Alarcon Yanina,31460842,
+3,Ramirez Sofia,18903280,
+4,Calvo Hector,24272145,
+5,Santillo Ivana,37554250,
+6,Villalba Ezequiel,36919250,
+7,Benitez Mirian,34678422,
+8,Guzman Noelia,12345674,
+9,Irusta Agustin,43567823,
+10,Luna Diego,56774234,
+11,Llanos Romina,43567897,
+12,Maschio Cesar,32111456,
+13,Mendoza Debora,32413543,
+14,More Franco,12345322,
+15,Moreyra Diego,32145523,
+16,Olmos Diego,23421225,
+17,Velasquez Estela,34211245,
+18,Rearte Rodrigo,12343222,
+19,Retamal Sergio,34563221,
+20,Zabala Carolina,33223123,
+
+
+END
