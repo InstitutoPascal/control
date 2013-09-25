@@ -191,6 +191,7 @@
 'Login to the Administrative Interface': 'Inicio de sesión para la Interfaz Administrativa',
 'logout': 'fin de sesión',
 'Logout': 'Fin de sesión',
+'lost password': 'lost password',
 'Lost Password': 'Contraseña perdida',
 'Lost password?': 'Lost password?',
 'lost password?': '¿Olvido la contraseña?',

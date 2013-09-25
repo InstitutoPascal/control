@@ -26,22 +26,30 @@ def index():
             redirect(URL(f=ficha, vars={'personaid': persona.personaid}))
             
         else:
-            response.flash = "Persona no encontrada"
+            response.flash = "Persona no encontrada..."
     #response.view = "generic.html"  # HACER una vista de verdad
-    return dict (form = form)
     
+        
+    return dict (form = form)
+ 
+import pyttsx
+   
 def ficha():
     if request.vars:
         fecha = request.now.date()
         hora = request.now.time()
         personaid= request.vars['personaid']
+        #nombre= db(db.personas.nombre).select(db.personas.personaid==personaid)
         db.movimientos.insert(personaid=personaid, fecha=fecha, hora=hora)
         response.flash='Usted fue registrado...'
         
         # si me pasan en la URL el docente, lo filtro 
         q=db.personas.personaid == personaid
-        
         filas= db(q).select(db.personas.nombre, db.personas.dni, db.personas.foto).first()
+        engine= pyttsx.init()
+        engine.setProperty('voice', 'spanish-latin-american')
+        engine.say('Bienvenido %s' %filas.nombre)
+        engine.runAndWait()
     
     return dict (filas=filas)
 
