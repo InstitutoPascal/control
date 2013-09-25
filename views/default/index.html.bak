@@ -1,9 +1,15 @@
-<head>
+<html>
+  <head>
+  
+    <title>Control de Acceso</title>
+    
+    
     <style type="text/css">
        body {
+
               font-family: Dejavu, Verdana, helvetica;
               font-size: 12px; 
-              background-color: #243080; color: #FFFFFF; 
+              background-color: #3CB371; color: #FFFFFF; 
               text-align:center;
        }
        h1 ,h2 ,h3, h4 { color: #D7D7D7; }
@@ -11,7 +17,7 @@
        img { border:0;}
        
        #telon {
-            background-image: url({{=URL(c='static', f='logo_pascal.jpg')}}); 
+            background-image: url({{=URL(c='static', f='facebook.png')}}); 
             background-repeat: no-repeat;
             width:696px;
             height:547px;
@@ -31,3 +37,4 @@
   <br>
   <br>
 <h1><center>{{=form}}</center></h1>
+    </html>
