@@ -6,7 +6,7 @@
     
     <style type="text/css">
        body {
-
+           
               font-family: Dejavu, Verdana, helvetica;
               font-size: 12px; 
               background-color: #3CB371; color: #FFFFFF; 
@@ -17,7 +17,7 @@
        img { border:0;}
        
        #telon {
-            background-image: url({{=URL(c='static', f='facebook.png')}}); 
+            background-image: url({{=URL(c='static', f='logo_pascal.jpg')}}); 
             background-repeat: no-repeat;
             width:696px;
             height:547px;
@@ -32,9 +32,19 @@
         }
 
     </style>
+    <body>
+    <div id="telon">
+  
+   <style:"background-image: url({{=URL(r=request,c='static',f='logo_pascal.jpg')}})">
+      
   </head>
   <br>
   <br>
-  <br>
+  <div style="position: absolute; left:0; top: 240px; width: 696; text-align: center;">
 <h1><center>{{=form}}</center></h1>
+<<<<<<< local
+ </div>
+<br>
+=======
     </html>
+>>>>>>> other
