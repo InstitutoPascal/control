@@ -122,6 +122,36 @@
 [2013-09-18 19:24:59] EDIT control/controllers/default.py: 0
 [2013-09-18 19:26:25] EDIT control/views/default/ficha.html: 0
 [2013-09-18 19:27:17] EDIT control/views/default/ficha.html: 0
+<<<<<<< local
+[2013-09-18 19:40:15] EDIT control/views/default/index.html: 1
+[2013-09-18 19:40:56] EDIT control/views/default/index.html: 0
+[2013-09-18 19:41:23] EDIT control/views/default/index.html: 0
+[2013-09-18 19:42:56] EDIT control/views/default/index.html: 0
+[2013-09-18 19:44:41] EDIT control/views/default/index.html: 0
+[2013-09-18 19:46:07] EDIT control/views/default/index.html: 0
+[2013-09-18 19:48:47] EDIT control/views/default/index.html: 0
+[2013-09-18 19:49:00] EDIT control/views/default/index.html: 0
+[2013-09-18 19:49:10] EDIT control/views/default/index.html: 0
+[2013-09-18 19:50:01] EDIT control/views/default/index.html: 0
+[2013-09-18 19:55:12] EDIT control/views/default/index.html: 1
+[2013-09-18 19:56:23] EDIT control/views/default/index.html: 2
+[2013-09-18 19:56:51] EDIT control/views/default/index.html: 0
+[2013-09-18 19:57:22] EDIT control/views/default/index.html: 0
+[2013-09-18 19:57:40] EDIT control/views/default/index.html: 0
+[2013-09-18 20:03:55] EDIT control/views/default/index.html: 0
+[2013-09-18 20:04:07] EDIT control/views/default/index.html: 0
+[2013-09-18 20:04:40] EDIT control/views/default/index.html: 0
+[2013-09-18 20:06:23] EDIT control/views/default/index.html: 1
+[2013-09-18 20:11:25] EDIT control/views/default/index.html: 0
+[2013-09-18 20:17:33] EDIT control/views/default/index.html: 1
+[2013-09-18 20:19:56] EDIT control/views/default/index.html: 1
+[2013-09-18 20:22:16] EDIT control/views/default/index.html: 4
+[2013-09-18 20:23:09] EDIT control/views/default/index.html: -2
+[2013-09-18 20:25:36] EDIT control/views/default/index.html: 2
+[2013-09-18 20:27:14] EDIT control/views/default/index.html: -4
+[2013-09-18 20:28:23] EDIT control/views/default/index.html: -1
+[2013-09-18 20:28:31] EDIT control/views/default/index.html: -1
+=======
 [2013-09-18 19:40:10] EDIT control/models/db.py: 6
 [2013-09-18 19:40:23] EDIT control/models/db.py: 1
 [2013-09-18 19:40:32] EDIT control/models/db.py: 0
@@ -228,3 +258,7 @@
 [2013-09-25 16:46:30] DELETE control/static/base.css: -551
 [2013-09-25 16:47:22] EDIT control/views/default/index.html: 0
 [2013-09-25 16:47:53] EDIT control/views/default/index.html: 0
+>>>>>>> other
+[2013-09-26 15:56:42] DELETE control/views/default/index.html.bak.orig: -37
+[2013-09-26 15:56:50] DELETE control/views/default/index.html.orig: -36
+[2013-09-26 16:08:56] EDIT control/views/default/index.html: -3
