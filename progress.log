@@ -262,3 +262,4 @@
 [2013-09-26 15:56:42] DELETE control/views/default/index.html.bak.orig: -37
 [2013-09-26 15:56:50] DELETE control/views/default/index.html.orig: -36
 [2013-09-26 16:08:56] EDIT control/views/default/index.html: -3
+[2013-09-26 20:15:15] EDIT control/controllers/control.py: 0
