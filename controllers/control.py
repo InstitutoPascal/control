@@ -92,3 +92,22 @@ def codigo_barras():
     response.headers['Content-Type']='image/png'
     im.save(response.body, extension.upper())
     return response.body.getvalue()
+    
+def miniatura():
+    from PIL import Image
+    from cStringIO import StringIO 
+    if request.vars:
+        
+        personaid= request.vars['personaid']
+        persona = db(db.personas.personaid==personaid).select(db.personas.foto).first()
+        #code = str(persona.dni)
+        #busco el registro con el campo upload
+        ruta_foto = os.path.join(request.folder, "uploads", persona.foto)
+        img= Image.open(ruta_foto)
+        img.thumbnail((100,100), Image.ANTIALIAS)
+        salida= StringIO()
+        img.save(salida,'PNG', quality=86)
+        salida.seek(0)
+        response.headers['Content-Type']= "image/png"
+        
+        return salida.getvalue()
