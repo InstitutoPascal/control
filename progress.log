@@ -478,3 +478,6 @@
 [2013-09-27 20:01:56] EDIT control/views/default/ficha.html: 0
 [2013-09-27 20:02:15] EDIT control/controllers/default.py: 0
 >>>>>>> other
+[2013-09-27 20:35:04] EDIT control/controllers/default.py: -4
+[2013-09-27 20:36:22] EDIT control/views/default/ficha.html: -4
+[2013-09-27 20:36:55] DELETE control/views/default/ficha.html.orig: -51
