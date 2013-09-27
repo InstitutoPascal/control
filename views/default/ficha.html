@@ -13,7 +13,7 @@
        img { border:0;}
        
        #telon {
-            background-image: url({{=URL(c='static', f='logo_pascal.jpg')}}); 
+            background-image: url({{=URL(c='static', f='isologo.jpg')}}); 
             background-repeat: no-repeat;
             width:696px;
             height:547px;
@@ -31,17 +31,21 @@
     <body>
     <div id="telon">
        
-            <div style="position: absolute; text-color:white;left:150; text-align:center;">
-     <h1><b><u><center>Sistema de Control de Acceso</center></u></b></h1>
- {{=filas.foto}} 
+        <div style="position: absolute; font size:black;left:150; text-align:center;">
+     <h1><b><u><center>Instituto Superior Tecnologico Blase Pascal</center></u></b></h1>
             </div>
             <br>
             <br>
-   <div style="position: absolute; left:10; top: 220px; width: 696; text-align: left;">
-     <h2>Fecha:{{=request.now.date()}}</h2>
+        <div style="position: absolute;left:300;top: 250px;width: 400; text-align:center;">
+        <h2>Foto:{{=filas.foto}}
+        </div>
+      <div style="position: absolute; left:10; top: 250px; width: 696; text-align: left;">
+          <h1><u> FICHA</u><h1>
+       <h2>Fecha:{{=request.now.date()}} Hora:{{=request.now.time()}}</h2>
     <h2>Nombre: {{=filas.nombre}} </h2>
     <h2>Dni: {{=filas.dni}} </h2>
-<h2><center>Hora de Ingreso: {{=request.now.time()}}</center></h2>
+<!--<h2><center>Hora de Ingreso: </center></h2>
+-->
 <form>
     <a href="index.html"><input type=button value="Volver" ></a>
 </form>

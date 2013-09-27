@@ -327,6 +327,29 @@
 [2013-09-27 17:24:01] EDIT control/views/default/ficha.html: 1
 [2013-09-27 17:24:53] EDIT control/views/default/ficha.html: 0
 [2013-09-27 17:25:24] EDIT control/views/default/ficha.html: 0
+<<<<<<< local
+[2013-09-27 18:20:40] EDIT control/views/default/ficha.html: 0
+[2013-09-27 18:26:22] EDIT control/views/default/ficha.html: 0
+[2013-09-27 18:28:03] EDIT control/views/default/index.html: -1
+[2013-09-27 18:29:12] EDIT control/views/default/ficha.html: 0
+[2013-09-27 18:29:34] EDIT control/views/default/ficha.html: 0
+[2013-09-27 18:29:58] EDIT control/views/default/ficha.html: 0
+[2013-09-27 18:31:08] EDIT control/views/default/ficha.html: 0
+[2013-09-27 18:33:34] EDIT control/views/default/ficha.html: 2
+[2013-09-27 18:34:08] EDIT control/views/default/ficha.html: 0
+[2013-09-27 18:35:26] EDIT control/views/default/ficha.html: 1
+[2013-09-27 18:36:24] EDIT control/views/default/ficha.html: 1
+[2013-09-27 18:37:27] EDIT control/views/default/ficha.html: 0
+[2013-09-27 18:37:56] EDIT control/views/default/ficha.html: 0
+[2013-09-27 18:38:07] EDIT control/views/default/ficha.html: 0
+[2013-09-27 18:38:21] EDIT control/views/default/ficha.html: 0
+[2013-09-27 18:40:38] EDIT control/views/default/ficha.html: 0
+[2013-09-27 18:40:54] EDIT control/views/default/ficha.html: 0
+[2013-09-27 18:41:45] EDIT control/views/default/ficha.html: 0
+[2013-09-27 18:42:24] EDIT control/views/default/ficha.html: 0
+[2013-09-27 18:42:40] EDIT control/views/default/ficha.html: 0
+=======
 [2013-09-27 18:35:41] EDIT control/controllers/control.py: 0
 [2013-09-27 18:36:58] EDIT control/controllers/control.py: 1
 [2013-09-27 18:38:07] EDIT control/controllers/control.py: 0
+>>>>>>> other
