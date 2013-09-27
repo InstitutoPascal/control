@@ -37,13 +37,14 @@ def codigo_barras():
     if request.vars:
         
         personaid= request.vars['personaid']
-        code = db(db.personas.personaid==personaid).select(db.personas.dni)
+        persona = db(db.personas.personaid==personaid).select(db.personas.dni).first()
+        code = str(persona.dni)
         basewidth=3
         height=30
         extension = "PNG"
     
         wide = basewidth
-        narrow = basewidth / 3.0
+        narrow = basewidth / 3
 
         # códigos ancho/angostos (wide/narrow) para los dígitos
         bars = ("nnwwn", "wnnnw", "nwnnw", "wwnnn", "nnwnw", "wnwnn", "nwwnn", 

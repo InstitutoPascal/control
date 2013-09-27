@@ -7,7 +7,7 @@ def inicio():
 import os
 
 def backup():
-    # Copia de seguridad de la base de datos
+    # Copia de seguridad de la base de datos..
     
     ruta = os.path.join (request.folder, "private" , "backup.csv") 
     arch = open (ruta, "wb")
@@ -37,7 +37,8 @@ def codigo_barras():
     if request.vars:
         
         personaid= request.vars['personaid']
-        code = db(db.personas.personaid==personaid).select(db.personas.dni)
+        persona = db(db.personas.personaid==personaid).select(db.personas.dni).first()
+        code = str(persona.dni)
         basewidth=3
         height=30
         extension = "PNG"
