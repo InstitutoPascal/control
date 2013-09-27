@@ -9,7 +9,7 @@
 <head>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{=T.accepted_language or 'en'}}">
   <head>
-    <title>{{=response.subtitle or request.function}} - {{=response.title or request.controller}} - Instituto Superior Tecnológico Blaise Pascal</title>
+    <title> Instituto Superior Tecnológico Blaise Pascal</title>
   <!--[if !HTML5]>
       <meta http-equiv="X-UA-Compatible" content="IE=edge{{=not request.is_local and ',chrome=1' or ''}}">
   <![endif]-->
@@ -20,11 +20,11 @@
 	   
   <meta charset="utf-8" />
 
-  <!-- http://dev.w3.org/html5/markup/meta.name.html -->
+  <!-- http://dev.w3.org/html5/markup/meta.name.html 
   <meta name="application-name" content="{{=request.application}}" />
 
   <!-- Speaking of Google, don't forget to set your site up:
-       http://google.com/webmasters -->
+       http://google.com/webmasters 
   <meta name="google-site-verification" content="" />
 
   <!--  Mobile Viewport Fix
@@ -34,22 +34,22 @@
         user-scalable = yes allows the user to zoom in -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
-  <link rel="apple-touch-icon" href="{{=URL('static','imagen4.jpg')}}">
+  <!--<link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
+  <link rel="apple-touch-icon" href="{{=URL('static','imagen4.jpg')}}">-->
 
   <!-- All JavaScript at the bottom, except for Modernizr which enables
-       HTML5 elements & feature detects -->
+       HTML5 elements & feature detects 
   <script src="{{=URL('static','js/modernizr.custom.js')}}"></script>
 
-  <!-- include stylesheets -->
+  <!-- include stylesheets 
   {{  
   response.files.append(URL('static','css/web2py.css'))
   response.files.append(URL('static','css/bootstrap.min.css'))
   response.files.append(URL('static','css/bootstrap-responsive.min.css'))
   response.files.append(URL('static','css/web2py_bootstrap.css'))
   }}
-
-  {{include 'web2py_ajax.html'}}
+-->
+  <!--{{include 'web2py_ajax.html'}}
 
   {{
   # using sidebars need to know what sidebar you want to use
@@ -63,10 +63,11 @@
        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" media="all" />
        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
        uncomment to load jquery-ui //-->
+ <!--
   <noscript><link href="{{=URL('static', 'css/web2py_bootstrap_nojs.css')}}" rel="stylesheet" type="text/css" /></noscript>
   {{block head}}{{end}}
 </head>
-
+-->
 <body>
   <!-- Navbar ================================================== -->
   <div class="navbar navbar-inverse navbar-fixed-top">
@@ -79,9 +80,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-	{{=response.logo or ''}}
-        <ul id="navbar" class="nav pull-right">{{='auth' in globals() and auth.navbar(mode="dropdown") or ''}}</ul>
-        <div class="nav-collapse">
+<!--	{{=response.logo or ''}}
+    -->
+            <ul id="navbar" class="nav pull-right">{{='auth' in globals() and auth.navbar(mode="dropdown") or ''}}</ul>
+     <!--   <div class="nav-collapse">
           {{is_mobile=request.user_agent().is_mobile}}
           {{if response.menu:}}
           {{=MENU(response.menu, _class='mobile-menu nav' if is_mobile else 'nav',mobile=is_mobile,li_class='dropdown',ul_class='dropdown-menu')}}
@@ -93,20 +95,22 @@
 
   <div class="container">
     <!-- Masthead ================================================== -->
-    {{if response.title:}}
-    <header class="mastheader row" id="header">
+   {{if response.title:}}
+        <header class="mastheader row" id="header">
         <div class="span12">
             <div class="page-header">
                 <h1>
-                    {{=response.title}}
+                    
+                   <!-- {{=response.title}}
                     <small>{{=response.subtitle or ''}}</small>
-                </h1>
+-->
+                                </h1>
             </div>
         </div>
     </header>
     {{pass}}
 
-    <section id="main" class="main row">
+   <!-- <section id="main" class="main row">
         {{if left_sidebar_enabled:}}
         <div class="span3 left-sidebar">
             {{block left_sidebar}}
@@ -115,13 +119,13 @@
             {{end}}
         </div>
         {{pass}}
-
+-->
         <div class="{{=middle_columns}}">
             {{block center}}
             {{include}}
             {{end}}
         </div>
-
+<!--
         {{if right_sidebar_enabled:}}
         <div class="span3">
             {{block right_sidebar}}
@@ -131,12 +135,12 @@
         </div>
         {{pass}}
     </section><!--/main-->
-
-    <!-- Footer ================================================== -->
+-->
+    <!-- Footer ================================================== 
     <div class="row">
         <footer class="footer span12" id="footer">
             <div class="footer-content">
-                {{block footer}} <!-- this is default footer -->
+                {{block footer}} <!-- this is default footer 
                 <div class="copyright pull-left">{{=T('Copyright')}} &#169; {{=request.now.year}}</div>
                 <div id="poweredBy" class="pull-right">
                     {{=T('Powered by')}}
@@ -150,7 +154,7 @@
   </div> <!-- /container -->
 
   <!-- The javascript =============================================
-       (Placed at the end of the document so the pages load faster) -->
+       (Placed at the end of the document so the pages load faster) 
   <script src="{{=URL('static','js/bootstrap.min.js')}}"></script>
   <script src="{{=URL('static','js/web2py_bootstrap.js')}}"></script>
   <!--[if lt IE 7 ]>
@@ -158,7 +162,7 @@
       <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
       <![endif]-->
   
-  {{if response.google_analytics_id:}}
+ <!-- {{if response.google_analytics_id:}}
   <script src="{{=URL('static','js/analytics.min.js')}}"></script>
   <script type="text/javascript">
   analytics.initialize({

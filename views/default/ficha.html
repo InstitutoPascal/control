@@ -1,4 +1,6 @@
-<html>
+{{extend 'layout.html'}}
+
+  <html>
   <head>
     <style type="text/css">
        body {
@@ -31,19 +33,23 @@
     <body>
     <div id="telon">
        
-        <div style="position: absolute; font size:black;left:150; text-align:center;">
-     <h1><b><u><center>Instituto Superior Tecnologico Blase Pascal</center></u></b></h1>
+        <div style="position: absolute; font size:black; left:150; text-align:center;">
+     <h2><b><u><center>Instituto Superior Tecnologico Blase Pascal</center></u></b></h2>
             </div>
             <br>
             <br>
         <div style="position: absolute;left:300;top: 250px;width: 400; text-align:center;">
+<<<<<<< local
+            <h3><center>Foto:{{=filas.foto}}</center></h3>
+=======
         <h2>{{=IMG(_src=URL(c='default',f='download',args=filas.foto))}}
+>>>>>>> other
         </div>
-      <div style="position: absolute; left:10; top: 250px; width: 696; text-align: left;">
-          <h1><u> FICHA</u><h1>
-       <h2>Fecha:{{=request.now.date()}} Hora:{{=request.now.time()}}</h2>
-    <h2>Nombre: {{=filas.nombre}} </h2>
-    <h2>Dni: {{=filas.dni}} </h2>
+      <div style="position: absolute; left:0; top: 250px; width: 696; text-align: left;">
+          <h3><u> FICHA</u><h3>
+       <h4>Fecha:{{=request.now.date()}} Hora:{{=request.now.time()}}</h4>
+    <h4>Nombre: {{=filas.nombre}} </h4>
+    <h4>Dni: {{=filas.dni}} </h4>
 <!--<h2><center>Hora de Ingreso: </center></h2>
 -->
 <form>

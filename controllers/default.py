@@ -24,13 +24,18 @@ def index():
         if persona:
             # encontrado, redirigo al menu alumnos en index 
             redirect(URL(f=ficha, vars={'personaid': persona.personaid}))
+<<<<<<< local
+            response.flash= "Bienvenido"
+=======
             redirect(URL(f=codigo_barras, vars={'personaid': persona.personaid}))
             redirect(URL(f=miniatura, vars={'personaid': persona.personaid}))
             
+>>>>>>> other
         else:
-            response.flash = "Persona no encontrada..."
+            response.flash = "Datos invalidos..."
     #response.view = "generic.html"  # HACER una vista de verdad
-    
+    else: 
+        response.flash='Bienvenido'
         
     return dict (form = form)
  
