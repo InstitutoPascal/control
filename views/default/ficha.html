@@ -5,7 +5,7 @@
            
               font-family: Dejavu, Verdana, helvetica;
               font-size: 12px; 
-              background-color: #3CB371; color: #FFFFFF; 
+              background-color: #69A3FA; color: #FFFFFF; 
               text-align:center;
        }
        h1 ,h2 ,h3, h4 { color: #D7D7D7; }
@@ -30,11 +30,13 @@
     </style>
     <body>
     <div id="telon">
-        <style: background-image: url({{=URL(r=request,c='static',f='logo_pascal.jpg')}})>
+       
             <div style="position: absolute; text-color:white;left:150; text-align:center;">
      <h1><b><u><center>Sistema de Control de Acceso</center></u></b></h1>
  {{=filas.foto}} 
             </div>
+            <br>
+            <br>
    <div style="position: absolute; left:10; top: 220px; width: 696; text-align: left;">
      <h2>Fecha:{{=request.now.date()}}</h2>
     <h2>Nombre: {{=filas.nombre}} </h2>

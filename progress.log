@@ -315,3 +315,15 @@
 [2013-09-27 16:53:37] EDIT control/views/default/index.html: 0
 [2013-09-27 16:54:17] EDIT control/views/default/index.html: 0
 [2013-09-27 17:14:05] UPLOAD /home/yanina/web2py/applications/control/static/isologo.jpg: 71
+[2013-09-27 17:15:30] EDIT control/views/default/index.html: 0
+[2013-09-27 17:16:31] EDIT control/views/default/index.html: 0
+[2013-09-27 17:17:29] EDIT control/views/default/index.html: 0
+[2013-09-27 17:18:27] EDIT control/views/default/index.html: -3
+[2013-09-27 17:19:00] EDIT control/views/default/index.html: 3
+[2013-09-27 17:21:15] DELETE control/static/isologo.jpg: -71
+[2013-09-27 17:21:41] UPLOAD /home/yanina/web2py/applications/control/static/isologo.jpg: 71
+[2013-09-27 17:22:00] EDIT control/views/default/ficha.html: 0
+[2013-09-27 17:22:31] EDIT control/views/default/index.html: 0
+[2013-09-27 17:24:01] EDIT control/views/default/ficha.html: 1
+[2013-09-27 17:24:53] EDIT control/views/default/ficha.html: 0
+[2013-09-27 17:25:24] EDIT control/views/default/ficha.html: 0
