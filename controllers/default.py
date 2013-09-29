@@ -8,7 +8,7 @@
 ## - download is for downloading files uploaded in the db (does streaming)
 ## - call exposes all registered services (none by default)
 #########################################################################
-
+import pyttsx
 
 def index():
     # armo un formulario para buscar alumno por su dni
@@ -22,20 +22,25 @@ def index():
         q = db.personas.dni == form.vars.dni
         persona = db(q).select().first()
         if persona:
-            # encontrado, redirigo al menu alumnos en index 
+            # encontrado, redirigo al menu alumnos en ficha
             redirect(URL(f=ficha, vars={'personaid': persona.personaid}))
             redirect(URL(f=codigo_barras, vars={'personaid': persona.personaid}))
             redirect(URL(f=miniatura, vars={'personaid': persona.personaid}))
             
         else:
-            response.flash = "Datos invalidos..."
+            engine= pyttsx.init()
+            engine.setProperty('voice', 'spanish-latin-american')
+            engine.say('No se encuentra registrado')
+            engine.runAndWait()
+            response.flash = "Datos invalidos..."  
+    
     #response.view = "generic.html"  # HACER una vista de verdad
     else: 
         response.flash='Bienvenido'
         
     return dict (form = form)
  
-import pyttsx
+
    
 def ficha():
     if request.vars:
