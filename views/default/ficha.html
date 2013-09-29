@@ -7,7 +7,7 @@
            
               font-family: Dejavu, Verdana, helvetica;
               font-size: 12px; 
-              background-color: #69A3FA; color: #FFFFFF; 
+              background-color: #006400; color: #FFFFFF; 
               text-align:center;
        }
        h1 ,h2 ,h3, h4 { color: #D7D7D7; }
@@ -15,9 +15,9 @@
        img { border:0;}
        
        #telon {
-            background-image: url({{=URL(c='static', f='isologo.jpg')}}); 
+            background-image: url({{=URL(c='static', f='logo1.jpg')}}); 
             background-repeat: no-repeat;
-            width:696px;
+            width:680px;
             height:547px;
             margin-left:auto;
             margin-right:auto;
@@ -33,26 +33,25 @@
     <body>
     <div id="telon">
        
-        <div style="position: absolute; font size:black; left:150; text-align:center;">
-     <h2><b><u><center>Instituto Superior Tecnologico Blase Pascal</center></u></b></h2>
-            </div>
             <br>
             <br>
-        <div style="position: absolute;left:300;top: 250px;width: 400; text-align:center;">
-        <h2>{{=IMG(_src=URL(c='default',f='download',args=filas.foto))}}
+        <div style="position: absolute;left:300;top: 270px;width: 400; text-align:center;">
+            <h4>{{=IMG(_src=URL(c='default',f='download',args=filas.foto))}}</h4>
 
         </div>
-      <div style="position: absolute; left:0; top: 250px; width: 696; text-align: left;">
+      <div style="position: absolute; left:0; top: 332px; width: 696; text-align: left;">
           <h3><u> FICHA</u><h3>
-       <h4>Fecha:{{=request.now.date()}} Hora:{{=request.now.time()}}</h4>
+              <h4>Fecha:{{=request.now.date()}} </h4>
+       <h4>Hora:{{=request.now.time()}}</h4>
     <h4>Nombre: {{=filas.nombre}} </h4>
     <h4>Dni: {{=filas.dni}} </h4>
+              
 <!--<h2><center>Hora de Ingreso: </center></h2>
 -->
 <form>
     <a href="index.html"><input type=button value="Volver" ></a>
 </form>
- </div>
+
 <br>
 
-    </html>
+</html>
