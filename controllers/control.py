@@ -25,8 +25,9 @@ def restauracion():
     db.import_from_csv_file(arch)
    
     return 'Restauración Completada'
-import Image, ImageFont, ImageDraw
     
+import Image, ImageFont, ImageDraw
+
 def codigo_barras():
     "Generar una imágen con el código de barras Interleaved 2 of 5"
     # basado de:
@@ -93,6 +94,8 @@ def codigo_barras():
     im.save(response.body, extension.upper())
     return response.body.getvalue()
     
+
+
 def miniatura():
     from PIL import Image
     from cStringIO import StringIO 
