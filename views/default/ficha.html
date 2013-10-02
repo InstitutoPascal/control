@@ -37,23 +37,24 @@
      </div>
             <br>
             <br>
-        <div style="position: absolute;left:300;top: 200px;width: 200; text-align:center;">
+        <div style="position: absolute;left:400;top: 170px;width: 200; text-align:center;">
             <h7>{{=IMG(_src=URL(c='default',f='download',args=filas.foto))}}</h7>
-
+            
         </div>
-      <div style="position: absolute; left:0; top: 200px; width: 696; text-align: left;">
-          <h3><u> FICHA</u><h3>
-              <h4>Fecha:{{=request.now.date()}} </h4>
-       <h4>Hora:{{=request.now.time()}}</h4>
-    <h4>Nombre: {{=filas.nombre}} </h4>
-    <h4>Dni: {{=filas.dni}} </h4>
+      <div style="position: absolute; left:0; top: 170px; width: 696; text-align: left;">
+              <h2><u> Perfil</u><h2>
+              <h3>Nombre: {{=filas.nombre}} </h3>
+              <h3>Dni: {{=filas.dni}} </h3>
+              <h3>Fecha:{{=request.now.date()}} </h3>
+			  <h3>Hora:{{=request.now.time().strftime("%H:%M")}}</h3>
               
 <!--<h2><center>Hora de Ingreso: </center></h2>
--->
+
 <form>
     <a href="index.html"><input type=button value="Volver" ></a>
 </form>
-
+-->
+<meta http-equiv="refresh" content="5;http://127.0.0.1:8000/control/default/index">
 <br>
 
 </html>

@@ -504,8 +504,24 @@
 [2013-10-01 16:01:15] EDIT control/views/layout.html: -1
 [2013-10-01 16:02:07] EDIT control/views/layout.html: 0
 [2013-10-01 19:07:01] EDIT control/views/layout.html: 0
+<<<<<<< local
+[2013-10-02 10:40:17] EDIT control/views/default/ficha.html: 1
+[2013-10-02 19:36:26] UPLOAD /home/yanina/web2py/applications/control/static/tarjeta.jpg: 126
+[2013-10-02 19:45:04] EDIT control/views/default/ficha.html: 1
+[2013-10-02 19:45:35] EDIT control/views/default/ficha.html: -1
+[2013-10-02 19:46:21] EDIT control/views/default/ficha.html: 0
+[2013-10-02 19:46:55] EDIT control/views/default/ficha.html: 0
+[2013-10-02 19:48:08] EDIT control/views/default/ficha.html: 0
+[2013-10-02 19:49:33] EDIT control/views/default/ficha.html: 0
+[2013-10-02 19:54:38] EDIT control/views/default/ficha.html: 0
+[2013-10-02 19:56:19] EDIT control/views/default/ficha.html: 0
+[2013-10-02 20:03:05] EDIT control/views/default/ficha.html: 0
+[2013-10-02 20:03:09] EDIT control/views/default/ficha.html: 0
+[2013-10-02 20:04:06] EDIT control/views/default/ficha.html: 0
+=======
 [2013-10-02 15:55:08] EDIT control/controllers/control.py: 0
 [2013-10-02 15:55:41] EDIT control/controllers/control.py: 0
 [2013-10-02 15:56:20] EDIT control/controllers/control.py: 0
 [2013-10-02 15:56:32] EDIT control/controllers/control.py: 0
 [2013-10-02 15:56:42] EDIT control/controllers/control.py: -3
+>>>>>>> other
