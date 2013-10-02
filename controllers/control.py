@@ -34,7 +34,8 @@ def codigo_barras():
     #  * http://www.fpdf.org/en/script/script67.php
     #  * http://code.activestate.com/recipes/426069/
     
-    
+    #im= Image.new("1",(0,0))
+    #im = Image.new("1",((8 * 3) * 3 + (10 * 1), 30))
     if request.vars:
         
         personaid= request.vars['personaid']
@@ -49,7 +50,7 @@ def codigo_barras():
 
         # códigos ancho/angostos (wide/narrow) para los dígitos
         bars = ("nnwwn", "wnnnw", "nwnnw", "wwnnn", "nnwnw", "wnwnn", "nwwnn", 
-            "nnnww", "wnnwn", "nwnwn", "nn", "wn")
+            "nnnww", "wnnwn", "nwnwn", "nn", "w        personaid= 1n")
 
         # agregar un 0 al principio si el número de dígitos es impar
         if len(code) % 2:
@@ -94,9 +95,8 @@ def codigo_barras():
     im.save(response.body, extension.upper())
     return response.body.getvalue()
     
-
-
 def miniatura():
+    
     from PIL import Image
     from cStringIO import StringIO 
     if request.vars:
@@ -113,4 +113,4 @@ def miniatura():
         salida.seek(0)
         response.headers['Content-Type']= "image/png"
         
-        return salida.getvalue()
+        return salida.getvalue(), response.body.getvalue()
