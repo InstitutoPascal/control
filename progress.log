@@ -582,3 +582,8 @@
 [2013-10-02 20:28:47] EDIT control/views/control/tarjeta.html: 2
 [2013-10-02 20:33:52] EDIT control/views/control/tarjeta.html: 6
 [2013-10-02 20:37:35] EDIT control/controllers/control.py: -2
+[2013-10-02 20:49:30] EDIT control/views/default/ficha.html: 0
+[2013-10-02 20:50:11] EDIT control/views/default/ficha.html: 0
+[2013-10-02 20:50:23] EDIT control/views/default/ficha.html: 0
+[2013-10-02 20:50:43] EDIT control/views/default/ficha.html: 0
+[2013-10-02 20:50:52] EDIT control/controllers/default.py: 0
