@@ -50,7 +50,7 @@ def codigo_barras():
 
         # códigos ancho/angostos (wide/narrow) para los dígitos
         bars = ("nnwwn", "wnnnw", "nwnnw", "wwnnn", "nnwnw", "wnwnn", "nwwnn", 
-            "nnnww", "wnnwn", "nwnwn", "nn", "w        personaid= 1n")
+            "nnnww", "wnnwn", "nwnwn", "nn", "wn")
 
         # agregar un 0 al principio si el número de dígitos es impar
         if len(code) % 2:
@@ -114,8 +114,10 @@ def miniatura():
         response.headers['Content-Type']= "image/png"
         
         return salida.getvalue(), response.body.getvalue()
-
-
-def prueba():
-    a=1
-    miniatura()
+        
+def tarjeta():
+           
+    personaid= request.vars['personaid']
+    persona = db(db.personas.personaid==personaid).select(db.personas.nombre).first()
+        
+    return dict (persona = persona)

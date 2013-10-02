@@ -26,6 +26,7 @@ def index():
             redirect(URL(f=ficha, vars={'personaid': persona.personaid}))
             redirect(URL(f=codigo_barras, vars={'personaid': persona.personaid}))
             redirect(URL(f=miniatura, vars={'personaid': persona.personaid}))
+            redirect(URL(f=tarjeta, vars={'personaid': persona.personaid}))
             
         else:
             engine= pyttsx.init()
@@ -53,13 +54,13 @@ def ficha():
         
         # si me pasan en la URL el docente, lo filtro 
         q=db.personas.personaid == personaid
-        filas= db(q).select(db.personas.nombre, db.personas.dni, db.personas.foto).first()
+        persona= db(q).select(db.personas.personaid, db.personas.nombre, db.personas.dni, db.personas.foto).first()
         engine= pyttsx.init()
         engine.setProperty('voice', 'spanish-latin-american')
-        engine.say('Bienvenido %s' %filas.nombre)
+        engine.say('Bienvenido %s' %persona.nombre)
         engine.runAndWait()
     
-    return dict (filas=filas)
+    return dict (persona=persona)
     
     
 
