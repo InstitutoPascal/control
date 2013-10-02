@@ -1,0 +1,10 @@
+{{extend 'layout.html'}} 
+<TABLE style="border: 1px solid black">
+        <TR style="border: 1px solid black">
+            <TD style="border: 1px solid black"> {{=IMG(_src=URL(c='control',f='miniatura', vars={'personaid': persona.personaid}))}} </TD>
+            <TD style="border: 1px solid black"> {{ =persona.nombre}} </TD>
+        </TR>
+        <TR style="border: 1px solid black">
+            <TD style="border: 1px solid black"> {{=IMG(_src=URL(c='control',f='codigo_barras', vars={'personaid': persona.personaid}))}} </TD>
+    </TR>
+</TABLE>
