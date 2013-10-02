@@ -34,8 +34,7 @@ def codigo_barras():
     #  * http://www.fpdf.org/en/script/script67.php
     #  * http://code.activestate.com/recipes/426069/
     
-    #im= Image.new("1",(0,0))
-    #im = Image.new("1",((8 * 3) * 3 + (10 * 1), 30))
+    
     if request.vars:
         
         personaid= request.vars['personaid']
