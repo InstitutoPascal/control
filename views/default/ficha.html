@@ -49,10 +49,9 @@
 			  <h3>Hora:{{=request.now.time().strftime("%H:%M")}}</h3>
               
 <!--<h2><center>Hora de Ingreso: </center></h2> -->
-
-<form>
     <!--<a href="index.html"><input type=button value="Volver" ></a> -->
-    <a href="{{=URL(c='control', f='tarjeta', vars={'personaid': persona.personaid})}}"><input type=button value="Imprimir Tarjeta" ></a>
+<form>
+        <a href="{{=URL(c='control', f='tarjeta', vars={'personaid': persona.personaid})}}"><input type=button value="Imprimir Tarjeta" ></a>
     
 </form>
 
