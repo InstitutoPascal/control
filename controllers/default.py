@@ -34,10 +34,12 @@ def index():
             engine.say('No se encuentra registrado')
             engine.runAndWait()
             response.flash = "Datos invalidos..."  
+            
+    else:
+        response.flash= "Bienvenido !!!"
     
     #response.view = "generic.html"  # HACER una vista de verdad
-    else: 
-        response.flash='Bienvenido'
+    
         
     return dict (form = form)
  
