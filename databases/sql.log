@@ -1,0 +1,141 @@
+timestamp: 2013-09-18T20:24:35.502268
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+);
+success!
+timestamp: 2013-09-18T20:24:35.723071
+CREATE TABLE auth_group(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    role CHAR(512),
+    description TEXT
+);
+success!
+timestamp: 2013-09-18T20:24:35.818199
+CREATE TABLE auth_membership(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE
+);
+success!
+timestamp: 2013-09-18T20:24:35.956649
+CREATE TABLE auth_permission(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE,
+    name CHAR(512),
+    table_name CHAR(512),
+    record_id INTEGER
+);
+success!
+timestamp: 2013-09-18T20:24:36.085624
+CREATE TABLE auth_event(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    time_stamp TIMESTAMP,
+    client_ip CHAR(512),
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    origin CHAR(512),
+    description TEXT
+);
+success!
+timestamp: 2013-09-18T20:24:36.221529
+CREATE TABLE auth_cas(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    created_on TIMESTAMP,
+    service CHAR(512),
+    ticket CHAR(512),
+    renew CHAR(1)
+);
+success!
+timestamp: 2013-09-18T20:24:36.329210
+CREATE TABLE personas(
+    personaid INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre CHAR(200),
+    dni INTEGER,
+    foto CHAR(50)
+);
+success!
+<<<<<<< local
+timestamp: 2013-09-18T19:09:35.491765
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+=======
+timestamp: 2013-09-18T20:24:36.449859
+CREATE TABLE movimientos(
+    movimientoid INTEGER PRIMARY KEY AUTOINCREMENT,
+    personaid INTEGER REFERENCES personas (personaid) ON DELETE CASCADE,
+    fecha DATE,
+    hora TIME
+>>>>>>> other
+);
+<<<<<<< local
+timestamp: 2013-09-18T19:14:29.476522
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+);
+timestamp: 2013-09-18T19:24:48.534819
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+);
+timestamp: 2013-09-18T19:28:33.606043
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+);
+=======
+success!
+>>>>>>> other
+timestamp: 2013-09-26T15:47:47.274032
+CREATE TABLE movimientos(
+    movimientoid INTEGER PRIMARY KEY AUTOINCREMENT,
+    personaid INTEGER REFERENCES personas (personaid) ON DELETE CASCADE,
+    fecha DATE,
+    hora TIME
+);
+timestamp: 2013-09-26T15:55:44.085002
+CREATE TABLE movimientos(
+    movimientoid INTEGER PRIMARY KEY AUTOINCREMENT,
+    personaid INTEGER REFERENCES personas (personaid) ON DELETE CASCADE,
+    fecha DATE,
+    hora TIME
+);
+timestamp: 2013-09-26T16:03:59.049642
+CREATE TABLE movimientos(
+    movimientoid INTEGER PRIMARY KEY AUTOINCREMENT,
+    personaid INTEGER REFERENCES personas (personaid) ON DELETE CASCADE,
+    fecha DATE,
+    hora TIME
+);

@@ -1,0 +1,54 @@
+TABLE auth_user
+
+
+TABLE auth_group
+
+
+TABLE auth_membership
+
+
+TABLE auth_permission
+
+
+TABLE auth_event
+
+
+TABLE auth_cas
+
+
+TABLE personas
+personas.personaid,personas.nombre,personas.dni,personas.foto
+1,Lucas Gonzalez,37144763,personas.foto.a9446279b2bb2f17.445343303139383.jpg
+2,Yanina Alarcon,31460842,personas.foto.be1eab3e9ff7873b.445343303139363.jpg
+3,Sofia Ramirez,18903280,personas.foto.80cfb946811034dc.313839303332383.jpg
+4,Hector Calvo,24272145,personas.foto.b89229a903a73352.323432373231343.jpg
+5,Ivana Santillo,37554250,personas.foto.9da5699889ee209f.333735353432353.jpg
+6,Ezequiel Villalba,36919250,personas.foto.a27fc008c07630c1.445343303139363.jpg
+7,Sosa Elias,34678422,personas.foto.aec87c4f7b897908.445343303139333.jpg
+9,Agustin Irusta,43567823,
+10,Diego Luna,36516269,personas.foto.8ac337399385d8e1.6c756e612e6a706.jpg
+11,Romina Llano,36875746,personas.foto.93a22dccaadb0dca.333638373537343.jpg
+12,Cesar Maschio,32111456,
+13,Debora Mendoza,32413543,personas.foto.81e120b5e7c1a8d0.6d656e646f7a612.jpg
+14,Franco More,36578449,personas.foto.b412839f9850fa3c.6d6f72652e6a706.jpg
+15,Diego Moreyra,36732240,personas.foto.ba7b9a3b55862c65.333637333232343.jpg
+16,Diego Olmos,23421225,personas.foto.8e568596606bdeef.445343303139363.jpg
+17,Nahuel Cosentino,34211245,personas.foto.9373927e4597d8f8.6e616875656c2e6.jpg
+18,Brian Batalla,38530469,personas.foto.a18fd69751422e5c.626174616c6c612.jpg
+19,Sergio Retamal,34563221,personas.foto.ad6572e04b725b46.445343303139363.jpg
+20,Guido Herrera,33223123,personas.foto.b517259156282bb0.445343303139373.jpg
+21,Matias Portales,33256789,personas.foto.a7d1e77e4fb3d6b5.445343303139343.jpg
+22,Juan Pablo Blanco,29072856,
+23,Damian Decimo,33779227,personas.foto.be6c0ee6150c8708.446563696d6f2e6.jpg
+24,Claudio Florentin,27456693,
+25,Patricio Hernando,36938653,personas.foto.a340b26b3b86d7c8.6865726e616e646.jpg
+26,Nestor Mamani,32789909,
+27,Ruben Ragones,33667789,
+28,Paolo Zamberlan,28923705,
+29,Pedro Leguizamon,30977205,
+
+
+TABLE movimientos
+
+
+END
