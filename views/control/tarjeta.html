@@ -44,6 +44,12 @@
         </div>
     <div style="position: absolute; left:50; top: 270px; width: 700; text-align: center;">
         <h4>{{=IMG(_src=URL(c='control',f='codigo_barras', vars={'personaid': persona.personaid}))}}</h4> 
-    
+        
         </div>
 </html>
+<br>
+<br>
+<form>
+        <a href="{{=URL(c='default', f='index', vars={'personaid': persona.personaid})}}"><input type=button value="Volver" ></a>
+    
+</form>
