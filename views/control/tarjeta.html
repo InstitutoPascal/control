@@ -9,16 +9,18 @@
              </center>
   
           <h3><font color= "black"><left> Nombre:{{ =persona.nombre}}</left></font></h3>
-      </div> 
+      
    
-          <h4><center>{{=IMG(_src=URL(c='control',f='codigo_barras', vars={'personaid': persona.personaid}))}}</center></h4></td> </tr>
+          <h4><center>{{=IMG(_src=URL(c='control',f='codigo_barras', vars={'personaid': persona.personaid}))}}</center></h4> </td> </tr>
         
-        </div>
+        
 
-<br>
-<br>
+
 
  </table>
+ 
+ <br>
+<br>
  <form>
         <a href="{{=URL(c='default', f='index', vars={'personaid': persona.personaid})}}"><input type=button value="Volver" ></a>
     
