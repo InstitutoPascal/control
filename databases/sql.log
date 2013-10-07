@@ -1,4 +1,4 @@
-timestamp: 2013-09-18T20:24:35.502268
+timestamp: 2013-10-07T19:03:01.403491
 CREATE TABLE auth_user(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     first_name CHAR(128),
@@ -10,21 +10,21 @@ CREATE TABLE auth_user(
     registration_id CHAR(512)
 );
 success!
-timestamp: 2013-09-18T20:24:35.723071
+timestamp: 2013-10-07T19:03:01.544163
 CREATE TABLE auth_group(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     role CHAR(512),
     description TEXT
 );
 success!
-timestamp: 2013-09-18T20:24:35.818199
+timestamp: 2013-10-07T19:03:01.636185
 CREATE TABLE auth_membership(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
     group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE
 );
 success!
-timestamp: 2013-09-18T20:24:35.956649
+timestamp: 2013-10-07T19:03:01.799965
 CREATE TABLE auth_permission(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE,
@@ -33,7 +33,7 @@ CREATE TABLE auth_permission(
     record_id INTEGER
 );
 success!
-timestamp: 2013-09-18T20:24:36.085624
+timestamp: 2013-10-07T19:03:01.889693
 CREATE TABLE auth_event(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     time_stamp TIMESTAMP,
@@ -43,7 +43,7 @@ CREATE TABLE auth_event(
     description TEXT
 );
 success!
-timestamp: 2013-09-18T20:24:36.221529
+timestamp: 2013-10-07T19:03:02.011877
 CREATE TABLE auth_cas(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
@@ -53,7 +53,7 @@ CREATE TABLE auth_cas(
     renew CHAR(1)
 );
 success!
-timestamp: 2013-09-18T20:24:36.329210
+timestamp: 2013-10-07T19:03:02.097231
 CREATE TABLE personas(
     personaid INTEGER PRIMARY KEY AUTOINCREMENT,
     nombre CHAR(200),
@@ -61,81 +61,11 @@ CREATE TABLE personas(
     foto CHAR(50)
 );
 success!
-<<<<<<< local
-timestamp: 2013-09-18T19:09:35.491765
-CREATE TABLE auth_user(
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    first_name CHAR(128),
-    last_name CHAR(128),
-    email CHAR(512),
-    password CHAR(512),
-    registration_key CHAR(512),
-    reset_password_key CHAR(512),
-    registration_id CHAR(512)
-=======
-timestamp: 2013-09-18T20:24:36.449859
+timestamp: 2013-10-07T19:03:02.191979
 CREATE TABLE movimientos(
     movimientoid INTEGER PRIMARY KEY AUTOINCREMENT,
     personaid INTEGER REFERENCES personas (personaid) ON DELETE CASCADE,
     fecha DATE,
     hora TIME
->>>>>>> other
 );
-<<<<<<< local
-timestamp: 2013-09-18T19:14:29.476522
-CREATE TABLE auth_user(
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    first_name CHAR(128),
-    last_name CHAR(128),
-    email CHAR(512),
-    password CHAR(512),
-    registration_key CHAR(512),
-    reset_password_key CHAR(512),
-    registration_id CHAR(512)
-);
-timestamp: 2013-09-18T19:24:48.534819
-CREATE TABLE auth_user(
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    first_name CHAR(128),
-    last_name CHAR(128),
-    email CHAR(512),
-    password CHAR(512),
-    registration_key CHAR(512),
-    reset_password_key CHAR(512),
-    registration_id CHAR(512)
-);
-timestamp: 2013-09-18T19:28:33.606043
-CREATE TABLE auth_user(
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    first_name CHAR(128),
-    last_name CHAR(128),
-    email CHAR(512),
-    password CHAR(512),
-    registration_key CHAR(512),
-    reset_password_key CHAR(512),
-    registration_id CHAR(512)
-);
-=======
 success!
->>>>>>> other
-timestamp: 2013-09-26T15:47:47.274032
-CREATE TABLE movimientos(
-    movimientoid INTEGER PRIMARY KEY AUTOINCREMENT,
-    personaid INTEGER REFERENCES personas (personaid) ON DELETE CASCADE,
-    fecha DATE,
-    hora TIME
-);
-timestamp: 2013-09-26T15:55:44.085002
-CREATE TABLE movimientos(
-    movimientoid INTEGER PRIMARY KEY AUTOINCREMENT,
-    personaid INTEGER REFERENCES personas (personaid) ON DELETE CASCADE,
-    fecha DATE,
-    hora TIME
-);
-timestamp: 2013-09-26T16:03:59.049642
-CREATE TABLE movimientos(
-    movimientoid INTEGER PRIMARY KEY AUTOINCREMENT,
-    personaid INTEGER REFERENCES personas (personaid) ON DELETE CASCADE,
-    fecha DATE,
-    hora TIME
-);
