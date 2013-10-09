@@ -116,7 +116,7 @@ def miniatura():
         
 def tarjeta():
            
-    personaid= request.vars['personaid']
-    persona = db(db.personas.personaid==personaid).select(db.personas.nombre, db.personas.personaid).first()
+    q= db.personas.id>0
+    personas = db(q).select(db.personas.nombre, db.personas.personaid)
         
-    return dict (persona = persona)
+    return dict (personas = personas)
