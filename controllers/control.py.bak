@@ -115,7 +115,7 @@ def miniatura():
         return salida.getvalue(), response.body.getvalue()
         
 def tarjeta():
-           
+    # busco qe haya registros en la bd
     q= db.personas.id>0
     personas = db(q).select(db.personas.nombre, db.personas.personaid)
         
