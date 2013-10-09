@@ -117,6 +117,6 @@ def miniatura():
 def tarjeta():
     # busco qe haya registros en la bd
     q= db.personas.id>0
-    personas = db(q).select(db.personas.nombre, db.personas.personaid) #traigo el id y nombres
+    personas = db(q).select(db.personas.nombre, db.personas.personaid) #traigo el id y nombres..
         
     return dict (personas = personas)
