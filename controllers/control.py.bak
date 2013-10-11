@@ -118,5 +118,9 @@ def tarjeta():
     # busco qe haya registros en la bd
     q= db.personas.id>0
     personas = db(q).select(db.personas.nombre, db.personas.personaid) #traigo el id y nombres..
+<<<<<<< local
+
+=======
+>>>>>>> other
         
     return dict (personas = personas)
