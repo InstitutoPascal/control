@@ -764,6 +764,75 @@
 [2013-10-09 17:24:01] EDIT control/views/control/tarjeta.html: 0
 [2013-10-09 17:24:49] EDIT control/views/control/tarjeta.html: -1
 [2013-10-09 17:25:17] EDIT control/views/control/tarjeta.html: 0
+<<<<<<< local
+[2013-10-09 18:39:23] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 18:40:07] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 18:40:40] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 18:41:01] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 18:42:21] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 18:42:35] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 18:43:52] EDIT control/views/control/tarjeta.html: 4
+[2013-10-09 18:44:53] EDIT control/views/control/tarjeta.html: -3
+[2013-10-09 18:45:10] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 18:47:01] EDIT control/views/control/tarjeta.html: 2
+[2013-10-09 18:48:21] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 18:48:59] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 18:49:17] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 18:50:01] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 18:57:39] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 18:58:38] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 18:59:24] EDIT control/views/control/tarjeta.html: -1
+[2013-10-09 19:00:37] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:01:34] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:01:49] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:01:59] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:03:09] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:03:45] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:10:41] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:10:55] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:11:06] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:11:27] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:11:40] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:11:52] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:12:02] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:19:30] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:22:08] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:22:54] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:23:08] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:23:46] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:30:33] EDIT control/controllers/control.py: 0
+[2013-10-09 19:34:01] EDIT control/views/control/tarjeta.html: 1
+[2013-10-09 19:34:49] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:38:08] EDIT control/controllers/control.py: 0
+[2013-10-09 19:40:39] EDIT control/controllers/control.py: 0
+[2013-10-09 19:41:39] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:43:07] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:43:16] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:46:25] EDIT control/controllers/control.py: 0
+[2013-10-09 19:46:59] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:47:16] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:48:54] EDIT control/views/control/tarjeta.html: 2
+[2013-10-09 19:51:44] EDIT control/controllers/control.py: 0
+[2013-10-09 19:52:34] EDIT control/controllers/control.py: 0
+[2013-10-09 19:52:52] EDIT control/controllers/control.py: 0
+[2013-10-09 19:53:10] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:53:33] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:54:18] EDIT control/controllers/control.py: 0
+[2013-10-09 19:54:24] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:55:29] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:56:17] EDIT control/controllers/control.py: 0
+[2013-10-09 19:56:25] EDIT control/controllers/control.py: 0
+[2013-10-09 19:57:05] EDIT control/controllers/control.py: 0
+[2013-10-09 19:57:25] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:57:56] EDIT control/views/control/tarjeta.html: -1
+[2013-10-09 19:58:34] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:59:06] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 19:59:58] EDIT control/views/control/tarjeta.html: -2
+[2013-10-09 20:00:18] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 20:03:28] EDIT control/controllers/control.py: 0
+[2013-10-09 20:03:31] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 20:04:39] EDIT control/views/control/tarjeta.html: 0
+=======
 [2013-10-09 20:00:08] EDIT control/controllers/control.py: 0
 [2013-10-09 20:00:47] EDIT control/controllers/control.py: 0
 [2013-10-09 20:01:12] EDIT control/views/control/tarjeta.html: 0
@@ -789,10 +858,39 @@
 [2013-10-09 20:16:25] EDIT control/views/control/tarjeta.html: 2
 [2013-10-09 20:17:08] EDIT control/views/control/tarjeta.html: 0
 [2013-10-09 20:17:13] EDIT control/controllers/control.py: 0
+<<<<<<< local
+>>>>>>> other
+[2013-10-09 20:20:25] DELETE control/views/control/tarjeta.html.orig: -16
+[2013-10-09 20:24:04] EDIT control/views/control/tarjeta.html: -22
+[2013-10-09 20:25:03] EDIT control/controllers/control.py: -5
+[2013-10-09 20:26:21] EDIT control/views/control/tarjeta.html: -1
+[2013-10-09 20:27:03] EDIT control/views/control/tarjeta.html: -1
+[2013-10-09 20:27:39] EDIT control/views/control/tarjeta.html: 0
+[2013-10-09 20:27:51] EDIT control/views/control/tarjeta.html: 0
+=======
 [2013-10-09 20:31:26] EDIT control/controllers/control.py: 1
 [2013-10-09 20:31:41] EDIT control/views/control/tarjeta.html: 0
+<<<<<<< local
+>>>>>>> other
+=======
 [2013-10-09 20:38:56] EDIT control/controllers/control.py: 0
+<<<<<<< local
+>>>>>>> other
+=======
 [2013-10-09 20:40:35] EDIT control/controllers/control.py: 0
+<<<<<<< local
+>>>>>>> other
+[2013-10-09 20:48:41] EDIT control/views/control/tarjeta.html: -4
+[2013-10-09 20:50:01] EDIT control/controllers/control.py: -8
+[2013-10-09 20:51:14] EDIT control/controllers/control.py: 1
+[2013-10-11 16:25:30] EDIT control/views/control/tarjeta.html: 0
+[2013-10-11 16:25:54] EDIT control/views/control/tarjeta.html: -1
+[2013-10-11 16:28:55] EDIT control/views/control/tarjeta.html: 0
+[2013-10-11 16:29:19] EDIT control/views/control/tarjeta.html: 0
+[2013-10-11 16:29:30] EDIT control/views/control/tarjeta.html: 0
+[2013-10-11 16:29:58] EDIT control/views/control/tarjeta.html: 0
+[2013-10-11 16:30:20] EDIT control/views/control/tarjeta.html: 0
+=======
 [2013-10-11 15:29:01] EDIT control/controllers/control.py: 0
 [2013-10-11 15:43:01] EDIT control/controllers/control.py: 0
 [2013-10-11 15:44:15] EDIT control/controllers/control.py: 0
@@ -829,3 +927,4 @@
 [2013-10-11 16:21:36] EDIT control/controllers/default.py: 5
 [2013-10-11 16:22:21] EDIT control/controllers/default.py: -5
 [2013-10-11 16:22:44] EDIT control/controllers/default.py: 0
+>>>>>>> other
