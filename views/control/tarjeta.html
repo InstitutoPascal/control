@@ -5,38 +5,19 @@
         
       <tr>
                <td style="border: 1px solid black">
-<<<<<<< local
+
                    <h4><u>{{=IMG(_src=URL(c='static', f='logo.jpg'),_width='50px',top='0')}}Instituto Superior Tecnologico Blaise Pascal</u></h4>     
-                  
+          <!-- llamo a la funcion miniatura (foto d perfil) determinado x el id de la persona --> 
+  			<!-- traigo el nombre de la persona -->
+               
         <left><b> Nombre:{{ =personas.nombre}}   {{=IMG(_src=URL(c='control',f='miniatura', vars={'personaid': personas.personaid}))}}
             </b></left>
-=======
-                 <!-- inserto el logo del pascal -->
-                   <h4>{{=IMG(_src=URL(c='static', f='logo.jpg'),_width='50px')}} <u>Instituto Superior Tecnologico Blaise Pascal </u><h4> 
->>>>>>> other
-             
-<<<<<<< local
+    <!-- llamo a la funcion codigo_barras q genera el codigo d barras determinado x el id d la persona -->         
           <h4><center>{{=IMG(_src=URL(c='control',f='codigo_barras', vars={'personaid': personas.personaid}),_width='100px')}}</center></h4> 
           </td>
           </TABLE>
  
  <br>
 <br>
-  {{pass}}
-=======
-          <!-- llamo a la funcion miniatura (foto d perfil) determinado x el id de la persona -->
-         <center>{{=IMG(_src=URL(c='control',f='miniatura', vars={'personaid': personas.personaid}))}}
-             </center>
-  			<!-- traigo el nombre de la persona -->
-          <h4><font color= "black"><left> Nombre:{{ =personas.nombre}}</left></font></h4>
-      
-   	<!-- llamo a la funcion codigo_barras q genera el codigo d barras determinado x el id d la persona -->
-          
-          <h4><center>{{=IMG(_src=URL(c='control',f='codigo_barras', vars={'personaid':personas.personaid}))}}</center></h4> </td> 
-      </tr>
-        
- </TABLE>
-      <br>
-      <br>
+  
       {{pass}}
->>>>>>> other
