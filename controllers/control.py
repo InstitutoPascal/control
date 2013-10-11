@@ -26,7 +26,7 @@ def restauracion():
    
     return 'Restauración Completada'
     
-import Image, ImageFont, ImageDraw
+import Image, ImageFont, ImageDraw #importo librerias de imagen de python
 
 def codigo_barras():
     "Generar una imágen con el código de barras Interleaved 2 of 5"
@@ -39,10 +39,10 @@ def codigo_barras():
         
         personaid= request.vars['personaid']
         persona = db(db.personas.personaid==personaid).select(db.personas.dni).first()
-        code = str(persona.dni)
-        basewidth=3
-        height=30
-        extension = "PNG"
+        code = str(persona.dni) #convierto el dni "entero" a string y lo guardo en code
+        basewidth=3 #parametros de imagen
+        height=30 #parametros de imagen
+        extension = "PNG" #digo q la imagen se guarde cn la extencion PNG
     
         wide = basewidth
         narrow = basewidth / 3
@@ -96,7 +96,7 @@ def codigo_barras():
     
 def miniatura():
     
-    from PIL import Image
+    from PIL import Image 
     from cStringIO import StringIO 
     if request.vars:
         
@@ -104,8 +104,8 @@ def miniatura():
         persona = db(db.personas.personaid==personaid).select(db.personas.foto).first()
         #code = str(persona.dni)
         #busco el registro con el campo upload
-        ruta_foto = os.path.join(request.folder, "uploads", persona.foto)
-        img= Image.open(ruta_foto)
+        ruta_foto = os.path.join(request.folder, "uploads", persona.foto) 
+        img= Image.open(ruta_foto) #abro la imagen
         img.thumbnail((100,100), Image.ANTIALIAS)
         salida= StringIO()
         img.save(salida,'PNG', quality=86)
