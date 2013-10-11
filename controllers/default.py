@@ -8,7 +8,7 @@
 ## - download is for downloading files uploaded in the db (does streaming)
 ## - call exposes all registered services (none by default)
 #########################################################################
-import pyttsx
+import pyttsx #importo librerias de audio
 
 def index():
     # armo un formulario para buscar alumno por su dni
@@ -22,17 +22,18 @@ def index():
         q = db.personas.dni == form.vars.dni
         persona = db(q).select().first()
         if persona:
-            # encontrado, redirigo al menu alumnos en ficha
+            # encontrado, redirigo al menu alumnos en ficha, en codigo d barras, miniatura y tarjeta
             redirect(URL(f=ficha, vars={'personaid': persona.personaid}))
             redirect(URL(f=codigo_barras, vars={'personaid': persona.personaid}))
             redirect(URL(f=miniatura, vars={'personaid': persona.personaid}))
             redirect(URL(f=tarjeta, vars={'personaid': persona.personaid}))
             
+            
         else:
-            engine= pyttsx.init()
-            engine.setProperty('voice', 'spanish-latin-american')
-            engine.say('No se encuentra registrado')
-            engine.runAndWait()
+            engine= pyttsx.init() #inicio el patron de voz
+            engine.setProperty('voice', 'spanish-latin-american') #doy propiedad de audio en español latino
+            engine.say('No se encuentra registrado') #digo lo qe se debe ejecutar al iniciar el audio
+            engine.runAndWait() #ejecuto la voz
             response.flash = "Datos invalidos..."  
             
     else:
@@ -60,6 +61,7 @@ def ficha():
         engine= pyttsx.init()
         engine.setProperty('voice', 'spanish-latin-american')
         engine.say('Bienvenido %s' %persona.nombre)
+        #traigo el registro directamente de la consulta para q el audio lo reproduzca
         engine.runAndWait()
     
     return dict (persona=persona)

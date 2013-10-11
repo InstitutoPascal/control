@@ -1,27 +1,26 @@
 {{ persona=personas}}
-{{for personas in persona:}}
-  <TABLE style="border: 4px solid black">
+{{for personas in persona:}} <!--para personas en persona inserto los registros en cada una d las tablas-->
+  <TABLE style="border: 3px solid blue">
   
         
       <tr>
    
                <td style="border: 1px solid black">
-                 <h4><u>{{=IMG(_src=URL(c='static', f='logo.jpg'),_width='50px')}}Instituto Superior Tecnologico Blaise Pascal</u><h4> 
+                 <!-- inserto el logo del pascal -->
+                   <h4>{{=IMG(_src=URL(c='static', f='logo.jpg'),_width='50px')}} <u>Instituto Superior Tecnologico Blaise Pascal </u><h4> 
              
-          
+          <!-- llamo a la funcion miniatura (foto d perfil) determinado x el id de la persona -->
          <center>{{=IMG(_src=URL(c='control',f='miniatura', vars={'personaid': personas.personaid}))}}
              </center>
-  
-          <h3><font color= "black"><left> Nombre:{{ =personas.nombre}}</left></font></h3>
+  			<!-- traigo el nombre de la persona -->
+          <h4><font color= "black"><left> Nombre:{{ =personas.nombre}}</left></font></h4>
       
-   
-          <h4><center>{{=IMG(_src=URL(c='control',f='codigo_barras', vars={'personaid': personas.personaid}))}}</center></h4> </td> </tr>
+   	<!-- llamo a la funcion codigo_barras q genera el codigo d barras determinado x el id d la persona -->
+          
+          <h4><center>{{=IMG(_src=URL(c='control',f='codigo_barras', vars={'personaid':personas.personaid}))}}</center></h4> </td> 
+      </tr>
         
-        
-
-
-
- </table>
+ </TABLE>
       <br>
       <br>
       {{pass}}

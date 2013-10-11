@@ -38,6 +38,7 @@
             <br>
             <br>
         <div style="position: absolute;left:400;top: 170px;width: 200; text-align:center;">
+            <!-- traigo la imagen de la consulta a tra vez de los datos de la persona registrada -->
             <h7>{{=IMG(_src=URL(c='default',f='download',args=persona.foto))}}</h7>
             
         </div>
@@ -48,14 +49,14 @@
               <h3>Fecha:{{=request.now.date()}} </h3>
 			  <h3>Hora:{{=request.now.time().strftime("%H:%M")}}</h3>
               
-<!--<h2><center>Hora de Ingreso: </center></h2> -->
-    <!--<a href="index.html"><input type=button value="Volver" ></a> -->
-<form>
+
+<!--<form>
         <a href="{{=URL(c='control', f='tarjeta', vars={'personaid': persona.personaid})}}"><input type=button value="Imprimir Tarjeta" ></a>
     
-</form>
+</form> -->
 
      <meta http-equiv="refresh" content="5;http://127.0.0.1:8000/control/default/index">
+     <!-- despues de un cierto tiempo permite volver a la pagina de inicio -->
 <br>
 
 </html>
