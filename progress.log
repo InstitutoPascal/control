@@ -928,3 +928,6 @@
 [2013-10-11 16:22:21] EDIT control/controllers/default.py: -5
 [2013-10-11 16:22:44] EDIT control/controllers/default.py: 0
 >>>>>>> other
+[2013-10-11 16:35:44] DELETE control/views/control/tarjeta.html.orig: -14
+[2013-10-11 16:39:47] EDIT control/views/control/tarjeta.html: -9
+[2013-10-11 16:41:48] EDIT control/views/control/tarjeta.html: -8
