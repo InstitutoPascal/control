@@ -122,3 +122,16 @@ def tarjeta():
 
         
     return dict (personas = personas)
+    
+def alta_persona():
+    subtitulo= T ('Complete el formulario por favor...')
+    form=SQLFORM(db.personas)
+    if form.accepts(request.vars,session):
+        
+        response.flash='Usted fue agregado...'
+    elif form.errors: 
+        response.flash='Hay errores en el formulario'
+    else:
+        response.flash='Por favor, complete el formulario'
+        
+    return dict (form=form, sub=subtitulo)
