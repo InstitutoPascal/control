@@ -161,6 +161,7 @@
 'Index': 'Indice',
 'Ingrese el dni': 'Ingrese el dni',
 'Ingrese el nombre': 'Ingrese el nombre',
+'Inicio': 'Inicio',
 'Inicio de sesión': 'Inicio de sesión',
 'insert new': 'inserte nuevo',
 'insert new %s': 'inserte nuevo %s',

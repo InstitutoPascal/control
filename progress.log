@@ -1067,3 +1067,10 @@
 [2013-10-16 13:19:16] EDIT control/controllers/control.py: 4
 [2013-10-16 13:22:37] EDIT control/controllers/control.py: 0
 [2013-10-16 13:41:50] EDIT control/controllers/control.py: 0
+[2013-10-16 14:34:45] EDIT control/views/layout.html: 0
+[2013-10-16 14:36:18] EDIT control/models/menu.py: 0
+[2013-10-16 14:38:14] EDIT control/models/menu.py: -8
+[2013-10-16 14:39:07] EDIT control/models/menu.py: 8
+[2013-10-16 14:39:08] EDIT control/models/menu.py: 0
+[2013-10-16 14:41:16] EDIT control/models/menu.py: -92
+[2013-10-16 14:41:28] EDIT control/models/menu.py: -1
