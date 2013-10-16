@@ -122,14 +122,24 @@ def tarjeta():
 
         
     return dict (personas = personas)
-    
+
+import pyttsx
+            
 def alta_persona():
     subtitulo= T ('Complete el formulario por favor...')
     form=SQLFORM(db.personas)
     if form.accepts(request.vars,session):
-        
+        engine= pyttsx.init() #inicio el patron de voz
+        engine.setProperty('voice', 'spanish-latin-american') #doy propiedad de audio en español latino
+        engine.say('Solicitud aceptada') #indico lo qe se debe ejecutar al iniciar el audio
+        engine.runAndWait() #ejecuto la voz
         response.flash='Usted fue agregado...'
+        
     elif form.errors: 
+        engine= pyttsx.init() #inicio el patron de voz
+        engine.setProperty('voice', 'spanish-latin-american') #doy propiedad de audio en español latino
+        engine.say('Complete el formulario por favor') #indico lo qe se debe ejecutar al iniciar el audio
+        engine.runAndWait() #ejecuto la voz
         response.flash='Hay errores en el formulario'
     else:
         response.flash='Por favor, complete el formulario'
