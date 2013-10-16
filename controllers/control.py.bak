@@ -115,12 +115,23 @@ def miniatura():
         return salida.getvalue(), response.body.getvalue()
         
 def tarjeta():
+    # genero tarjetas
     # busco qe haya registros en la bd
     q= db.personas.id>0
-    personas = db(q).select(db.personas.nombre, db.personas.personaid) #traigo el id y nombres..
-<<<<<<< local
+    personas = db(q).select(db.personas.nombre, db.personas.personaid) #traigo el id y nombres
 
-=======
->>>>>>> other
         
     return dict (personas = personas)
+    
+def alta_persona():
+    subtitulo= T ('Complete el formulario por favor...')
+    form=SQLFORM(db.personas)
+    if form.accepts(request.vars,session):
+        
+        response.flash='Usted fue agregado...'
+    elif form.errors: 
+        response.flash='Hay errores en el formulario'
+    else:
+        response.flash='Por favor, complete el formulario'
+        
+    return dict (form=form, sub=subtitulo)
