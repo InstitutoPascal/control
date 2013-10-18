@@ -1,11 +1,11 @@
 {{extend 'layout.html'}}
 {{ persona=personas}}
 {{for personas in persona:}} <!--para personas en persona inserto los registros en cada una d las tablas-->
- <TABLE style="border: 10px solid blue;_width='70px';_height:'50px'">
+ <TABLE style="border: 10px solid navy;_width='70px';_height:'50px'">
       <tr >
                <!--<td style="border: 4px solid black;_width='95px';_height:'80px'">-->
          <td>           
-             <center><h5>{{=IMG(_src=URL(c='static', f='logo.jpg'),_width='30px')}}<u>Instituto Superior Tecnologico Blaise Pascal</u><br>{{=IMG(_src=URL(c='control',f='miniatura', vars={'personaid': personas.personaid}),_width='45px',top= '0',left='50')}} {{ =personas.nombre}}<br><br>{{=IMG(_src=URL(c='control',f='codigo_barras', vars={'personaid': personas.personaid}),_width='70px')}}</h5></center> 
+             <center><h5>{{=IMG(_src=URL(c='static', f='logo.jpg'),_width='30px')}}<u>Instituto Superior Tecnologico Blaise Pascal</u><br><br>{{=IMG(_src=URL(c='control',f='miniatura', vars={'personaid': personas.personaid}),_width='45px',top= '0',left='50')}} {{ =personas.nombre}}<br><br>{{=IMG(_src=URL(c='control',f='codigo_barras', vars={'personaid': personas.personaid}),_width='70px')}}</h5></center> 
           </td>
           </TABLE>
 <br>
