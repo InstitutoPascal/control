@@ -1,6 +1,14 @@
 {{extend 'layout.html'}}
 
   <html>
+       <div style="position: absolute;left:10 top: 270px; width: 700; text-align: left;">
+<ul>
+    <b><li><u><a>MENU:</a></u></li>
+  <li><a href="http://127.0.0.1:8000/control/control/alta_persona">NUEVO REGISTRO</a></li>
+  <li><a href="http://127.0.0.1:8000/control/default/index">INICIO</a></li>
+        <li><a href="http://127.0.0.1:8000/control/control/tarjeta">IMPRIMIR TARJETA</a></li></b>
+</ul>
+      </div>
   <head>
   
     <title>Control de Acceso</title>
@@ -53,6 +61,6 @@
 </form> -->
  </div>
 <br>
-
+  
 
     </html>
