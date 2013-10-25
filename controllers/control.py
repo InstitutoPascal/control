@@ -143,7 +143,7 @@ def alta_persona():
         engine.runAndWait() #ejecuto la voz
         response.flash='Usted fue agregado...'
         #http://127.0.0.1:8000/control/control/tarjeta_personal
-        redirect(URL(f=control/tarjeta_personal))
+        redirect(URL(f='tarjeta_personal'))
         
     elif form.errors: 
         engine= pyttsx.init() #inicio el patron de voz
