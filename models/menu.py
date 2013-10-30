@@ -39,8 +39,12 @@ def _():
     ctr = request.controller
     # useful links to internal and external resources
     response.menu += [
-        (SPAN('Registro Nuevo', _class='highlighted'), False, 'http://127.0.0.1:8000/control/control/alta_persona', [
-       ])
-                ]
+        (SPAN('Registro Nuevo', _class='highlighted'), False, 'http://127.0.0.1:8000/control/control/alta_persona',[
+        ])
+        #(T('Movimientos', _class='highlighted'), False, URL('control','listar'), [])
+         ]
+    response.menu += [
+        (SPAN('Movimientos', _class='highlighted'), False, 'http://127.0.0.1:8000/control/control/listar', [])
+         ]
          
 if DEVELOPMENT_MENU: _()
