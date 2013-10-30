@@ -143,7 +143,7 @@ def alta_persona():
         engine.runAndWait() #ejecuto la voz
         response.flash='Usted fue agregado...'
         #http://127.0.0.1:8000/control/control/tarjeta_personal
-        redirect(URL(f='tarjeta_personal'))
+        #redirect(URL(f='tarjeta_personal'))
         
     elif form.errors: 
         engine= pyttsx.init() #inicio el patron de voz
@@ -155,3 +155,18 @@ def alta_persona():
         response.flash='Por favor, complete el formulario'
         
     return dict (form=form, sub=subtitulo)
+def listar():
+    movimiento = db().select(db.movimientos.ALL)
+    listado=[]
+    listado.append(TABLE(TR(TH('ID',_style='width:200px; color:black; background: LimeGreen; border:black solid'),
+    TH('Nombre',_style='width:200px; color:black; background:LimeGreen ; border:black solid'), TH('Fecha',_style='width:200px; color:black; background:LimeGreen; border:black solid'), TH('Hora',_style='width:200px; color:black; background:LimeGreen; border:black solid'))))  
+   
+   #recorre la tupla de datos obtenidos de la consulta sql y la agrega a listado: 
+    for x in movimiento:
+        
+       listado.append(TABLE(TR(TD (x.id,_style='width:200px; color:black; background:white ; border: 2px solid black'),
+       TD(x.personaid.nombre,_style='width:200px; color:black; background: white; border: 2px solid black'),TD(x.fecha,_style='width:200px; color:black; background: white; border: 2px solid black'),TD(x.hora,_style='width:200px; color:black; background: white; border: 2px solid black')))) 
+
+    #retorna en una variable los datos insertados en una tabla html formateada con web2py:
+    a = DIV(listado)
+    return dict (a=a)
