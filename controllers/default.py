@@ -29,12 +29,12 @@ def index():
             redirect(URL(f=tarjeta, vars={'personaid': persona.personaid}))
             
             
-        else:
-            engine= pyttsx.init() #inicio el patron de voz
-            engine.setProperty('voice', 'spanish-latin-american') #doy propiedad de audio en español latino
-            engine.say('No se encuentra registrado') #digo lo qe se debe ejecutar al iniciar el audio
-            engine.runAndWait() #ejecuto la voz
-            response.flash = "Datos invalidos..."  
+        #else:
+         #   engine= pyttsx.init() #inicio el patron de voz
+          #  engine.setProperty('voice', 'spanish-latin-american') #doy propiedad de audio en español latino
+           # engine.say('No se encuentra registrado') #digo lo qe se debe ejecutar al iniciar el audio
+            #engine.runAndWait() #ejecuto la voz
+            #response.flash = "Datos invalidos..."  
             
     else:
         response.flash= "Bienvenido !!!"
@@ -58,11 +58,11 @@ def ficha():
         # si me pasan en la URL el docente, lo filtro 
         q=db.personas.personaid == personaid
         persona= db(q).select(db.personas.personaid, db.personas.nombre, db.personas.dni, db.personas.foto).first()
-        engine= pyttsx.init()
-        engine.setProperty('voice', 'spanish-latin-american')
-        engine.say('Bienvenido %s' %persona.nombre)
+        #engine= pyttsx.init()
+        #engine.setProperty('voice', 'spanish-latin-american')
+        #engine.say('Bienvenido %s' %persona.nombre)
         #traigo el registro directamente de la consulta para q el audio lo reproduzca
-        engine.runAndWait()
+        #engine.runAndWait()
     
     return dict (persona=persona)
     
